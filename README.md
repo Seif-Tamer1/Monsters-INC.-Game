@@ -8,6 +8,6 @@ no brackets means for everyone
 3-he didnt specify doing a method in interface why did we do it?is it fine? he said add if you want
 I added the method in the file to avoid error for now. we either can:
 1)put method in interface and putting it in door cell as it implements it to avoid error(which we are doing now) depending on the fact he said add methods if you want
-2)do not put methods and depend on fact that logic is for milestone 2
+2)do not put methods and depend on fact that logic is for milestone 2 but it would leave interface empty so idk if it would cause any problems in test phase
 4-take care even though the classes are public and can be seen from all packes not only its own package you have to import it so java can know its place.
 5-There is a mistake in section 5.7.2 the constructor has variable name which doesnt exist.
