@@ -7,3 +7,4 @@ no brackets means for everyone
 2- compareto mechanism (90% already correct) (abousa)
 3-he didnt specify doing a method in interface why did we do it?is it fine? he said add if you want
 4-take care even though the classes are public and can be seen from all packes not only its own package you have to import it so java can know its place.
+5-There is a mistake in section 5.7.2 the constructor has variable name which doesnt exist.
