@@ -4,6 +4,7 @@ DooR DasH: Scare vs Laugh Touchdown is a competitive board game set in the world
 Notes to work on till now:
 no brackets means for everyone
 1- monsters variable boundaries: position, energy,confusion turns(maybe)...  (abousa)
+   same thing with me in convoyer belts effect must be positve and contimination socks effect must be negative
 2- compareto mechanism (90% already correct) (abousa)
 3-he didnt specify doing a method in interface why did we do it?is it fine? he said add if you want
 I added the method in the file to avoid error for now. we either can:
