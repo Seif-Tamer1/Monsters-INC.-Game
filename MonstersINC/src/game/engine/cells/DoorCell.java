@@ -15,7 +15,8 @@ public class DoorCell extends Cell implements CanisterModifier {
 	}
 
 	public void setActivated(boolean activated) {
-		this.activated = activated;
+		if (activated == true && this.activated == false)
+			this.activated = true;
 	}
 
 	public Role getRole() {
@@ -31,7 +32,7 @@ public class DoorCell extends Cell implements CanisterModifier {
 		super(name);
 		this.role = role;
 		this.energy = energy;
-		activated = false;
+		this.activated = false;
 	}
 
 	// method from interface must be added to avoid error

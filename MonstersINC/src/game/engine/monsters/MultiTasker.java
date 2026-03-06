@@ -19,6 +19,9 @@ public class MultiTasker extends Monster {
 	}
 
 	public void setNormalSpeedTurns(int normalSpeedTurns) {
-		this.normalSpeedTurns = normalSpeedTurns;
+		if (normalSpeedTurns < 0)
+			this.normalSpeedTurns = 0;
+		else
+			this.normalSpeedTurns = normalSpeedTurns;
 	}
 }

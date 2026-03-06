@@ -42,7 +42,10 @@ public abstract class Monster implements Comparable {
 	}
 
 	public void setEnergy(int energy) {
-		this.energy = energy;
+		if (energy >= 0)
+			this.energy = energy;
+		else
+			this.energy = 0;
 	}
 
 	public int getPosition() {
@@ -50,7 +53,12 @@ public abstract class Monster implements Comparable {
 	}
 
 	public void setPosition(int position) {
-		this.position = position;
+		if (position < 0)
+			this.position = 0;
+		else if (position > 99)
+			this.position = position % 100;
+		else
+			this.position = position;
 	}
 
 	public boolean isFrozen() {
@@ -74,7 +82,10 @@ public abstract class Monster implements Comparable {
 	}
 
 	public void setConfusionTurns(int confusionTurns) {
-		this.confusionTurns = confusionTurns;
+		if (confusionTurns < 0)
+			this.confusionTurns = 0;
+		else
+			this.confusionTurns = confusionTurns;
 	}
 
 	public String getName() {
