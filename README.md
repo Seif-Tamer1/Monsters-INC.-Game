@@ -19,3 +19,4 @@ energy (canister) within the game)
 
 4-take care even though the classes are public and can be seen from all packes not only its own package you have to import it so java can know its place.
 
+5-mohab setters and getters inside constructor (kinda fine ig)
