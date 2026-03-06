@@ -6,6 +6,7 @@ no brackets means for everyone
 1- monsters variable boundaries: position, energy,confusion turns,momentumTurns in Dasher, normalSpeedTurns in MultiTasker  (abousa)
    same thing with me in convoyer belts effect must be positve and contimination socks effect must be negative
    (suggestion by gemini is math manipulation(always positive use abs for example))
+   use constant min if do not work. ex: this.energy=energy min, energymin=0
    
 2- compareto mechanism (90% already correct) (abousa)
 
