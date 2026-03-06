@@ -3,7 +3,7 @@ package game.engine.monsters;
 import game.engine.Role;
 
 public abstract class Monster implements Comparable {
-	//Attributes
+	// Attributes
 	private String name;
 	private String description;
 	private Role role;
@@ -13,8 +13,8 @@ public abstract class Monster implements Comparable {
 	private boolean frozen;
 	private boolean shielded;
 	private int confusionTurns;
-	
-	//constructor
+
+	// constructor
 	public Monster(String name, String description, Role originalRole,
 			int energy) {
 		super();
@@ -26,8 +26,9 @@ public abstract class Monster implements Comparable {
 		this.position = this.confusionTurns = 0;
 		this.frozen = this.shielded = false;
 	}
-	//setters and getters
-	
+
+	// setters and getters
+
 	public Role getRole() {
 		return role;
 	}
@@ -41,7 +42,10 @@ public abstract class Monster implements Comparable {
 	}
 
 	public void setEnergy(int energy) {
-		this.energy = energy;
+		if (energy >= 0)
+			this.energy = energy;
+		else
+			this.energy = 0;
 	}
 
 	public int getPosition() {
@@ -49,7 +53,12 @@ public abstract class Monster implements Comparable {
 	}
 
 	public void setPosition(int position) {
-		this.position = position;
+		if (position < 0)
+			this.position = 0;
+		else if (position > 99)
+			this.position = position % 100;
+		else
+			this.position = position;
 	}
 
 	public boolean isFrozen() {
@@ -73,7 +82,10 @@ public abstract class Monster implements Comparable {
 	}
 
 	public void setConfusionTurns(int confusionTurns) {
-		this.confusionTurns = confusionTurns;
+		if (confusionTurns < 0)
+			this.confusionTurns = 0;
+		else
+			this.confusionTurns = confusionTurns;
 	}
 
 	public String getName() {
@@ -87,12 +99,13 @@ public abstract class Monster implements Comparable {
 	public Role getOriginalRole() {
 		return originalRole;
 	}
+
 	// Method
 	public int compareTo(Object o) {
-		Monster m=(Monster)o;
-		if(this.position>m.position)
+		Monster m = (Monster) o;
+		if (this.position > m.position)
 			return 1;
-		else if(this.position<m.position)
+		else if (this.position < m.position)
 			return -1;
 		else
 			return 0;
