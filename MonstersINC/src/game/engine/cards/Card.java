@@ -8,16 +8,19 @@ public abstract class Card {
 	private boolean lucky;
 	
 	//Setters and getters
-	public String getName(){
+	public String getName() {
 		return name;
 	}
-	public String getDescription(){
+
+	public String getDescription() {
 		return description;
 	}
-	public int getRarity(){
+
+	public int getRarity() {
 		return rarity;
 	}
-	public boolean getLucky(){
+
+	public boolean isLucky() {
 		return lucky;
 	}
 	
@@ -29,5 +32,7 @@ public abstract class Card {
 		this.lucky=lucky;
 		
 	}
+
+	
 
 }

@@ -5,7 +5,7 @@ import game.engine.interfaces.CanisterModifier;
 public class ContaminationSock extends TransportCell implements
 		CanisterModifier {
 	// Constructor
-	ContaminationSock(String name, int effect) {
+	public ContaminationSock(String name, int effect) {
 		super(name, Math.abs(effect) * (-1));
 	}
 

@@ -1,7 +1,7 @@
 package game.engine.exceptions;
 
-public class InvalidMoveException extends GameActionExcption {
-	public static final String MSG = "Invalid move attempted";
+public class InvalidMoveException extends GameActionException {
+	private static final String MSG = "Invalid move attempted";
 
 	public InvalidMoveException() {
 		super(MSG);
