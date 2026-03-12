@@ -9,12 +9,12 @@ public class InvalidCSVFormat extends IOException {
 
 	public InvalidCSVFormat(String inputLine) {
 		super(MSG + inputLine);
-		this.setInputLine(inputLine);
+		this.inputLine=inputLine;
 	}
 
 	public InvalidCSVFormat(String message, String inputLine) {
 		super(message);
-		this.setInputLine(inputLine);
+		this.inputLine=inputLine;
 	}
 
 	public String getInputLine() {
